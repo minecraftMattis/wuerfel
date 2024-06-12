@@ -40,10 +40,10 @@
         . . . # . 
         . . # # # 
         . . . # .
-        `</field></block></statement><value name="IF7"><block type="logic_compare" id="@8oDwwG=Yo*C$^Ssqm68"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="mIIfOj=NpT4s`mdc?rNC"><field name="NUM">0</field></shadow><block type="variables_get" id=".;izcrCm5-s#,k:[_X.u"><field name="VAR" id="|BvlJyeBx=pPS:bn+Tad">zahl</field></block></value><value name="B"><shadow type="math_number" id="@3fP/)8a^4pHuX;YTN3O"><field name="NUM">8</field></shadow></value></block></value><statement name="DO7"><block type="device_show_leds" id="Jr(PMnmF.~P7@lDB1T59"><field name="LEDS">`
+        `</field></block></statement><value name="IF7"><block type="logic_compare" id="@8oDwwG=Yo*C$^Ssqm68"><field name="OP">EQ</field><value name="A"><shadow type="math_number" id="mIIfOj=NpT4s`mdc?rNC"><field name="NUM">0</field></shadow><block type="variables_get" id=".;izcrCm5-s#,k:[_X.u"><field name="VAR" id="|BvlJyeBx=pPS:bn+Tad">zahl</field></block></value><value name="B"><shadow type="math_number" id="@3fP/)8a^4pHuX;YTN3O"><field name="NUM">8</field></shadow></value></block></value><statement name="DO7"><block type="music_playable_play" id="8}}74Bq^aJ(iBZn?WWvb"><field name="playbackMode">music.PlaybackMode.InBackground</field><value name="toPlay"><shadow type="music_string_playable" id="-@^8(7^MUu/ITWHa)gXy"><value name="melody"><shadow type="melody_editor" id="}Xx1M9|!MP35%8!V`#Dr"><field name="melody">"C - E - G C5 C5 C5 "</field></shadow></value><value name="bpm"><shadow type="math_number_minmax" id="u/*s%W2Wl9$]R3p50S+l"><mutation min="40" max="500" label="Bpm" precision="0"></mutation><field name="SLIDER">296</field></shadow></value></shadow></value><next><block type="device_show_leds" id="Jr(PMnmF.~P7@lDB1T59"><field name="LEDS">`
         . . # . . 
         . # . # . 
         . . # . . 
         . # . # . 
         . . # . .
-        `</field></block></statement></block></next></block></next></block></statement></block></xml>
+        `</field></block></next></block></statement></block></next></block></next></block></statement></block></xml>

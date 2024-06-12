@@ -59,6 +59,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . # .
             `)
     } else if (zahl == 8) {
+        music.play(music.stringPlayable("C - E - G C5 C5 C5 ", 296), music.PlaybackMode.InBackground)
         basic.showLeds(`
             . . # . .
             . # . # .
