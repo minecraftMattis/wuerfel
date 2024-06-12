@@ -1,7 +1,7 @@
 let zahl = 0
 input.onGesture(Gesture.Shake, function () {
     music.play(music.tonePlayable(988, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
-    zahl = randint(1, 9)
+    zahl = randint(1, 8)
     if (zahl == 3) {
         basic.showLeds(`
             . . . . .
@@ -57,6 +57,14 @@ input.onGesture(Gesture.Shake, function () {
             . . . # .
             . . # # #
             . . . # .
+            `)
+    } else if (zahl == 8) {
+        basic.showLeds(`
+            . . # . .
+            . # . # .
+            . . # . .
+            . # . # .
+            . . # . .
             `)
     } else {
     	
