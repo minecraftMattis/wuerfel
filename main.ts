@@ -1,9 +1,20 @@
 let zahl = 0
+input.onSound(DetectedSound.Loud, function () {
+    basic.showIcon(IconNames.Heart)
+    music.play(music.tonePlayable(523, music.beat(BeatFraction.Breve)), music.PlaybackMode.InBackground)
+})
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        # # # # #
+        `)
+})
 input.onGesture(Gesture.Shake, function () {
     music.play(music.tonePlayable(988, music.beat(BeatFraction.Half)), music.PlaybackMode.UntilDone)
     zahl = randint(1, 9)
-})
-basic.forever(function () {
     if (zahl == 3) {
         basic.showLeds(`
             . . . . .
@@ -56,7 +67,7 @@ basic.forever(function () {
         basic.showLeds(`
             . . . . .
             . . # # .
-            . . . # .
+            . . . # #
             . . # # #
             . . . # .
             `)
@@ -80,4 +91,22 @@ basic.forever(function () {
     } else {
     	
     }
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . # . # .
+        . # # # .
+        . # . # .
+        `)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
